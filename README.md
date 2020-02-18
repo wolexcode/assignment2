@@ -36,7 +36,7 @@ Follow these steps:
 
 ### 3. HackerRank
 
-  1. Navigate to [this assignment on HackerRank](https://www.hackerrank.com/tests/6o9fk556dqc/8b978d6b7f2c543e83b2c0cef536bb34?try_test=true)
+  1. Navigate to [this assignment on HackerRank](https://www.hackerrank.com/tests/82rqefl46ks/4c94eb8cde02f7cbe9dee45f24b1fd47?try_test=true)
 
   2. Click on "Upload code as Zip" and select your zip file
 
