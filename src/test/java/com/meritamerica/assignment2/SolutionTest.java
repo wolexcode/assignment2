@@ -85,7 +85,7 @@ public class SolutionTest {
         assertEquals("Sam", accountHolder.getFirstName());    	
         assertEquals("John", accountHolder.getMiddleName());       
         assertEquals("Houston", accountHolder.getLastName());  
-        assertEquals("633378899", accountHolder.getSSN());       
+        assertEquals("633378899", accountHolder.getssn());       
         assertEquals(1000, accountHolder.getCheckingBalance(),0);    
         assertEquals(10000, accountHolder.getSavingsBalance(),0);         
     }
@@ -96,17 +96,17 @@ public class SolutionTest {
     	
     	AccountHolder accountHolder = new AccountHolder("Sam", "John", "Houston","633378899");
     	
-    	CheckingAccount checkingAccount1 =new CheckingAccount(1000);
-    	SavingsAccount savingsAccount1 = new SavingsAccount(10000);
+    	CheckingAccount1 checkingAccount1 =new CheckingAccount1(1000);
+    	SavingsAccount1 savingsAccount1 = new SavingsAccount1(10000);
     	
-    	CheckingAccount checkingAccount2 =new CheckingAccount(5000);
-    	SavingsAccount savingsAccount2 = new SavingsAccount(50000);
+    	CheckingAccount1 checkingAccount2 =new CheckingAccount1(5000);
+    	SavingsAccount1 savingsAccount2 = new SavingsAccount1(50000);
     	
-    	CheckingAccount checkingAccount3 =new CheckingAccount(50000);
-    	SavingsAccount savingsAccount3 = new SavingsAccount(130000);
+    	CheckingAccount1 checkingAccount3 =new CheckingAccount1(50000);
+    	SavingsAccount1 savingsAccount3 = new SavingsAccount1(130000);
     	
-       	CheckingAccount checkingAccount4 =new CheckingAccount(5000);
-    	SavingsAccount savingsAccount4 = new SavingsAccount(50000);    	
+       	CheckingAccount1 checkingAccount4 =new CheckingAccount1(5000);
+    	SavingsAccount1 savingsAccount4 = new SavingsAccount1(50000);    	
 
     	accountHolder.addCheckingAccount(checkingAccount1);
     	accountHolder.addSavingsAccount(savingsAccount1);
@@ -128,7 +128,7 @@ public class SolutionTest {
     @Test    
     public void testAdCDAccountToAccountHolder() {
     	CDOffering cdOffering = new CDOffering(1,1.8/100);
-    	CDAccount cdAccount = new CDAccount(cdOffering, 5000);
+    	CDAccount1 cdAccount = new CDAccount1(cdOffering, 5000);
     	
     	
     	AccountHolder accountHolder = new AccountHolder("Sam", "John", "Houston","633378899");
@@ -153,7 +153,7 @@ public class SolutionTest {
         assertEquals("Sam", MeritBank.getAccountHolders()[0].getFirstName());    	
         assertEquals("John", MeritBank.getAccountHolders()[0].getMiddleName());       
         assertEquals("Houston", MeritBank.getAccountHolders()[0].getLastName());  
-        assertEquals("633378899", MeritBank.getAccountHolders()[0].getSSN());       
+        assertEquals("633378899", MeritBank.getAccountHolders()[0].getssn());       
         assertEquals(1000, MeritBank.getAccountHolders()[0].getCheckingBalance(),0);    
         assertEquals(10000, MeritBank.getAccountHolders()[0].getSavingsBalance(),0);     	  	
     }
